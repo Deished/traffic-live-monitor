@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased;
+    overflow: hidden;
+  }
+  
+  /* Light Theme */
+  body.light-theme {
+    @apply bg-slate-50 text-slate-900;
+  }
+  
+  body.light-theme .glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 255, 249, 0.2);
+  }
+  
+  body.light-theme .glass-hover:hover {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(0, 255, 249, 0.4);
+  }
+  
+  body.light-theme .grid-bg {
+    background-image: 
+      linear-gradient(to right, rgba(0, 180, 216, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 180, 216, 0.08) 1px, transparent 1px);
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 255, 249, 0.1);
+  }
+
+  .glass-hover {
+    transition: all 0.3s ease;
+  }
+
+  .glass-hover:hover {
+    background: rgba(15, 23, 42, 0.8);
+    border-color: rgba(0, 255, 249, 0.3);
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 20px rgba(0, 255, 249, 0.3);
+  }
+
+  .neon-glow-strong {
+    box-shadow: 0 0 30px rgba(0, 255, 249, 0.6);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #00fff9 0%, #0066ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .scan-button {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scan-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(0, 255, 249, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+
+  .scan-button:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .animate-scan-pulse {
+    animation: scanPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes scanPulse {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(0, 255, 249, 0.4);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(0, 255, 249, 0.8);
+      transform: scale(1.05);
+    }
+  }
+
+  .grid-bg {
+    background-image: 
+      linear-gradient(to right, rgba(0, 255, 249, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 255, 249, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
